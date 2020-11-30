@@ -8,7 +8,7 @@ from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 
 
-message_data = pd.read_csv("../Datasets/spam.csv",encoding = "latin")
+message_data = pd.read_csv("spam.csv",encoding = "latin")
 
 message_data.head()
 
