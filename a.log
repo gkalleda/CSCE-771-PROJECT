@@ -1,0 +1,66 @@
+message_data
+      New_ID Spam/Not_Spam                                            message
+0          0           ham  Go until jurong point, crazy.. Available only ...
+1          1           ham                      Ok lar... Joking wif u oni...
+2          2          spam  Free entry in 2 a wkly comp to win FA Cup fina...
+3          3           ham  U dun say so early hor... U c already then say...
+4          4           ham  Nah I don't think he goes to usf, he lives aro...
+...      ...           ...                                                ...
+5567    5567          spam  This is the 2nd time we have tried 2 contact u...
+5568    5568           ham              Will Ì_ b going to esplanade fr home?
+5569    5569           ham  Pity, * was in mood for that. So...any other s...
+5570    5570           ham  The guy did some bitching but I acted like i'd...
+5571    5571           ham                         Rofl. Its true to its name
+
+[5572 rows x 3 columns]
+-------------------------------------------------------------------------------------
+Message data copy after textprocessing
+0       Go jurong point crazy Available bugis n great ...
+1                                 Ok lar Joking wif u oni
+2       Free entry 2 wkly comp win FA Cup final tkts 2...
+3                     U dun say early hor U c already say
+4             Nah dont think goes usf lives around though
+                              ...                        
+5567    2nd time tried 2 contact u U å£750 Pound prize...
+5568                          Ì b going esplanade fr home
+5569                          Pity mood Soany suggestions
+5570    guy bitching acted like id interested buying s...
+5571                                       Rofl true name
+Name: message, Length: 5572, dtype: object
+-------------------------------------------------------------------------------------
+accuracyscore after textprocessing
+0.9383971291866029
+------------------------------------------------------------------------------------
+messagedatacopy after stemming
+0       go jurong point crazi avail bugi n great world...
+1                                  ok lar joke wif u oni 
+2       free entri 2 wkli comp win fa cup final tkts 2...
+3                    u dun say earli hor u c alreadi say 
+4              nah dont think goe usf live around though 
+                              ...                        
+5567    2nd time tri 2 contact u u å£750 pound prize 2...
+5568                             ì b go esplanad fr home 
+5569                             piti mood soani suggest 
+5570    guy bitch act like id interest buy someth els ...
+5571                                      rofl true name 
+Name: message, Length: 5572, dtype: object
+-------------------------------------------------------------------------------------
+Accuracy after stemming
+0.9461722488038278
+-------------------------------------------------------------------------------------
+Accuracy score after normalising length
+0.9467703349282297
+--------------------------------------------------------------------------------------
+Spam Positive 104
+Spam Negative 15
+Spam Neutral 65
+Percentage of spam positives among spam 56.52173913043478
+Percentage of spam negatives among spam 8.152173913043478
+Percentage of spam neutrals among spam 35.32608695652174
+----------------------------------------------------------------------------------------------------------------------
+Not Spam Positive 600
+Not Spam Negative 255
+Not Spam Neutral 633
+Percentage of not spam positives among spam 40.32258064516129
+Percentage of not spam negatives among spam 17.137096774193548
+Percentage of not spam neutrals among spam 42.54032258064516
